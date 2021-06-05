@@ -1,0 +1,25 @@
+footer{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 7px 0;
+
+    a{
+        color: white;
+
+        &:hover{
+            text-decoration: none;
+            color: white;
+        }
+
+        img{ 
+            height: 20px;
+            margin-left: 5px;
+            vertical-align: bottom;
+        }
+    }
+
+    
+}
+

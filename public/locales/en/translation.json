@@ -1,0 +1,16 @@
+{
+    "intro":{
+        "title": "Welcome",
+        "text": "Welcome to my Online CV!",
+        "name": "Miguel Santos"
+    },
+    "projects":{
+
+    },
+    "contacts":{
+        "email": "miguel_santos@hotmail.com",
+        "tel": "967627847"
+    },
+    "version":"1"
+
+}

@@ -1,0 +1,120 @@
+@import 'base';
+
+.banner{
+    margin: $no-margin;
+    padding: $no-padding;
+    height: $full-height;
+    position: relative;
+}
+
+.banner-img{
+    height: $full-height;
+    width: $full-width;
+    margin: $no-margin;
+    padding: $no-padding;
+    filter: brightness(0.6);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%);
+}
+
+.banner-name > p{
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.banner-text-container{
+    position: absolute;
+    right: 0;
+    bottom: 40%;
+    text-align: right;
+    text-shadow: 6px 4px 9px #00000087;
+    user-select: none;
+}
+
+.banner-text-container-h1{
+    color: white;
+    font-size: 140px;
+    line-height: 0.9;
+    margin-right: -10px;
+}
+.banner-text-container-h2{
+    font-size: 45px;
+    color: #c7c7c7;
+}
+.banner-text-container-h3{
+    font-size: 35px;
+    color: #797979;
+}
+
+.banner-bottom{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    text-shadow: 6px 4px 9px #00000087;
+}
+
+/* Arrow down Animation */
+.arrow-down-container{
+    position: absolute;
+    bottom: 60px;
+    height: 20px;
+    width: 100%;
+
+    .arrow-down-1, .arrow-down-2{
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        left: 50%;
+        background-color: transparent;
+        transform: rotate(-45deg) translate(-50%);
+        border-left: 2px solid rgba(255,255,255,1);
+        border-bottom: 2px solid rgba(255,255,255,1);
+        border-bottom-left-radius: 3px;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    
+    .arrow-down-1{
+        top: 0;
+        opacity: 0;
+        animation-name: arrowAnimation-1;
+    }
+    
+    .arrow-down-2{
+        top: 50%;
+        opacity: 1;
+        animation-name: arrowAnimation-2;
+    }
+
+}
+
+
+
+
+@keyframes arrowAnimation-1 {
+    0%  { top: 0; opacity: 0;}
+    40% { top: 50%; opacity: 1;}
+    60% { top: 50%; opacity: 1;}
+    100% { top: 100%; opacity: 0;}
+  }
+
+  @keyframes arrowAnimation-2 {
+    0%  { top: 50%; opacity: 1;}
+    10% { top: 50%; opacity: 1;}
+    50% { top: 100%; opacity: 0;}
+    51% { top: 0; opacity: 0;}
+    90% { top: 50%; opacity: 1;}
+    100% { top: 50%; opacity: 1;}
+  }

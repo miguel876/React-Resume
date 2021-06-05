@@ -1,0 +1,74 @@
+@import 'base';
+
+.projects{
+    width: 100%;
+    position: relative;
+    margin-top: 300px;
+
+    .row{
+        border-bottom: 1px solid rgba(0,0,0,0.1); 
+
+        &:nth-child(1){
+            border-bottom: none;
+        }
+    }
+
+    
+
+    .relative{
+        position: relative;
+    }
+
+    .company-data {
+        position: sticky;
+        top: 25px;
+
+        .company-name{
+            font-size: 18px;
+        }
+    
+        .company-date{
+            font-size: 14px;
+        }
+    }
+    
+
+    .project{
+        
+        .project-description{
+            border-top: 1px solid rgba(0,0,0,0.1); 
+        }
+
+        &:nth-child(1) .project-description{
+            border-top: none;
+        }
+
+        
+    }
+}
+
+.hide-left{
+    left: -100%;
+    opacity: 0;
+}
+.hide-right{
+    right: -100%;
+    opacity: 0;
+}
+
+.show-left{
+    animation: resetLeft 1s ease;
+}
+.show-right{
+    animation: resetRight 1s ease;
+}
+
+@keyframes resetLeft {
+    0% { left: -100%; opacity: 0;}
+    100% { left: 0%; opacity: 1;}
+}
+
+@keyframes resetRight {
+    0% { right: -100%; opacity: 0;}
+    100% { right: 0%; opacity: 1;}
+}

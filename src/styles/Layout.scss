@@ -1,0 +1,40 @@
+//Variables
+@import 'base';
+
+$blur-time: 0.2s;
+
+.Layout{
+    margin: $no-margin;
+    padding: $no-padding;
+ 
+    > div{
+        scroll-snap-align: start;
+        background-color: #fff;
+
+        &:nth-child(1) {
+            background-color: transparent;
+        }
+    }
+
+}
+
+    
+
+.blurIn{
+    animation-name: blurIn;
+    animation-duration: $blur-time;
+}
+.blurOut{
+    animation-name: blurOut;
+    animation-duration: $blur-time;
+}
+
+@keyframes blurIn {
+    from { filter: blur(0px)}
+    to { filter: blur(5px)}
+}
+
+@keyframes blurOut {
+    from { filter: blur(5px)}
+    to { filter: blur(0px)}
+}

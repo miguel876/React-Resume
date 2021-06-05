@@ -1,0 +1,33 @@
+@import 'styles/base';
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("./resources/fonts/DMSerifDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "TitleFont";
+  src: url("./resources/fonts/CinzelDecorative-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MavenPro";
+  src: url("./resources/fonts/MavenPro-Regular.ttf");
+}
+
+body, html, #root {
+  margin: $no-margin;
+  padding: $no-padding;
+  font-family: MavenPro, sans-serif;
+}
+
+body{
+  /*overflow: hidden;*/
+  background-image: url('./resources/images/pc-1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+
+}
+
+
