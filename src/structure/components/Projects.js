@@ -36,7 +36,11 @@ export default class Projects extends Component {
           <div className="row pb-5">
             <div className="col-3 relative">
               <div className="company-data">
-                <div className="company-date">09/2018 - *</div>
+                <div className="company-date">
+                  <div className="company-start-date">09/2018</div>
+                  <span> - </span>
+                  <div className="company-end-date">*</div>
+                 </div>
                 <div className="company-name">Asseco PST</div>
               </div>
             </div>
@@ -103,7 +107,11 @@ export default class Projects extends Component {
           <div className="row mt-5 pb-5">
             <div className="col-3 relative">
               <div className="company-data">
-                <div className="company-date">03/2018 - 09/2018</div>
+                <div className="company-date">
+                  <div className="company-start-date">03/2018</div>
+                  <span> - </span>
+                  <div className="company-end-date">09/2018</div>
+                </div>
                 <div className="company-name">NO SHAPE</div>
               </div>
               
@@ -174,7 +182,6 @@ export default class Projects extends Component {
           <div className="row mt-5 pb-5">
             <div className="col-3 relative">
               <div className="company-data">
-              
                 <div className="company-name">Education and Courses</div>
               </div>
               
