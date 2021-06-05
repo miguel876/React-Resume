@@ -29,6 +29,11 @@
     
         .company-date{
             font-size: 14px;
+            display: flex;
+
+            > span{
+                margin: 0 5px;
+            }
         }
     }
     
@@ -71,4 +76,22 @@
 @keyframes resetRight {
     0% { right: -100%; opacity: 0;}
     100% { right: 0%; opacity: 1;}
+}
+
+@media (max-width:768px)  { 
+    .projects .company-data {
+        text-align: center;
+
+        .company-date{
+            display: block;
+
+            > span{
+                display: none;
+            }
+        }
+
+        .company-name{
+            font-size: 16px;
+        }
+    }
 }

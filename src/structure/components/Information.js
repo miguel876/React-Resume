@@ -9,11 +9,11 @@ export default class Information extends Component {
                     <div className="row">
                         <div className="col">
                             <div className="text-center info-title mb-5">Languages</div>
-                            <div className="w-50 ml-auto mr-auto d-flex info-row">
+                            <div className="ml-auto mr-auto d-flex info-row">
                                 <div className="w-50">Portuguese</div>
                                 <div><b>Native</b></div>
                             </div>
-                            <div className="w-50 ml-auto mr-auto d-flex info-row mb-5">
+                            <div className="ml-auto mr-auto d-flex info-row mb-5">
                                 <div className="w-50">English</div>
                                 <div><b>B2</b></div>
                             </div>
