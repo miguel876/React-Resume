@@ -21,9 +21,9 @@
     position: absolute;
     top: 0;
     height: 100%;
-    left: 50%;
-    width: 80%;
-    transform: translate(-50%);
+    right: 0;
+    width: 100%;
+
 }
 
 .banner-name > p{
@@ -36,20 +36,26 @@
     position: absolute;
     right: 0;
     bottom: 40%;
+    width: 40%;
     text-align: right;
-    text-shadow: 6px 4px 9px #00000087;
+    -webkit-user-select: none;
     user-select: none;
 }
 
 .banner-text-container-h1{
-    color: white;
-    font-size: 140px;
+    color: black;
+    font-size: 73px;
     line-height: 0.9;
+    background-color: white;
     margin-right: -10px;
+    width: 100%;
+    padding: 15px;
+    letter-spacing: 2px;
 }
 .banner-text-container-h2{
     font-size: 45px;
     color: #c7c7c7;
+    letter-spacing: 2px;
 }
 .banner-text-container-h3{
     font-size: 35px;
