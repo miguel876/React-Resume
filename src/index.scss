@@ -33,6 +33,7 @@
 body, html, #root {
   margin: $no-margin;
   padding: $no-padding; 
+  scroll-behavior: smooth;
 }
 
 p{ 
@@ -60,6 +61,23 @@ body{
 b{ 
   font-weight: bold !important;
 }
+
+ul { 
+  margin-top: 10px !important;
+}
+
+li {
+  font-family: Merriweather, sans-serif;
+  line-height: 2;
+  font-size: 17.5px;
+  letter-spacing: 0.4px;
+  list-style-type: square;
+}
+
+mark{ 
+  background-color:#fff3b6 !important;
+}
+
 
 .gray{
   color: $gray;

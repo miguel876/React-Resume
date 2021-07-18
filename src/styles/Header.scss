@@ -3,7 +3,7 @@
 nav{ 
     color: white;
     width: $full-width;
-    position: fixed;
+    position: absolute;
     z-index: 11;
 
     .nav-logo{
@@ -109,6 +109,49 @@ nav{
 
 }
 
+nav.header-down{
+    background-color: black;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.5);
+    height: 65px;
+    animation: headerOpen 0.5s ease-in-out forwards;
+    overflow: hidden;
+    position: fixed;
+
+    .nav-logo{
+        div{ 
+            font-size: 22px;
+            letter-spacing: -2px;
+        }
+    }
+
+    .menu-bar{
+        height: auto;
+        position: relative;
+        width: auto;
+        background-color: black;
+        padding-top: 4px;
+
+        div{ 
+            a{ 
+                font-size: 18px;
+                font-family: Archivo-Narrow, sans-serif;
+                color: white;
+
+                &::after{
+                    content: '';
+                    width: 0%;
+                    height: 2px;
+                    background-color: white;
+                    left: 0;
+                    position: absolute;
+                    bottom: 0;
+    
+                }
+            }
+        }
+    }
+}
+
 //Animations
 
 .linkSlideOpen::after{
@@ -170,7 +213,7 @@ nav{
 }
 
 .menuListClose{
-    animation: menuListCloseAnim 0.1s ease-in-out forwards;
+    animation: menuListCloseAnim 0.3s ease-in-out forwards;
 }
 
 @keyframes menuListOpenAnim {
@@ -181,4 +224,9 @@ nav{
 @keyframes menuListCloseAnim {
     from { opacity: 100%; }
     to { opacity: 0; }
+}
+
+@keyframes headerOpen {
+    from { height: 0; }
+    to { height: 65px; }
 }
