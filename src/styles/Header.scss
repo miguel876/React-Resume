@@ -1,0 +1,232 @@
+@import 'base';
+
+nav{ 
+    color: white;
+    width: $full-width;
+    position: absolute;
+    z-index: 11;
+
+    .nav-logo{
+
+        div { 
+            font-size: 75px;
+            text-align: left;
+            letter-spacing: -4px;
+            text-transform: uppercase;
+        }
+    }
+
+    .menu-bar div:last-child {
+        margin-right: 0;
+    }
+    
+    .menu-bar div {
+        margin: 0 15px;
+
+        a { 
+            color: #000;
+            font-family: Archivo-Black, sans-serif;
+            font-size: 50px;
+            position: relative;
+            transition: 0.4s;
+
+            &::after{
+                content: '';
+                width: 0%;
+                height: 10px;
+                background-color: black;
+                left: 0;
+                position: absolute;
+                bottom: 0;
+
+            }
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+
+    .burger{
+        margin-top: 25px;
+        cursor: pointer;
+
+        .burger-line{
+            background-color: white;
+            height: 4px;
+            width: 87px;
+            box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
+
+            &:nth-child(1), &:nth-child(2) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .menu-bar{
+        background-color: white;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: $full-height;
+
+        .close-menu{
+            padding-right: 100px;
+            padding-top: 20px;
+            cursor: pointer;
+            position: relative;
+            right: -25px;
+            height: 100px;
+        
+            .close-bar {
+                background-color: black;
+                height: 100px;
+                width: 4px;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                left: 50%;
+
+                &:nth-child(1){
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2){
+                    transform: rotate(135deg);
+                }
+            }
+        }
+
+        .menu-list{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }    
+
+    
+
+}
+
+nav.header-down{
+    background-color: black;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.5);
+    height: 65px;
+    animation: headerOpen 0.5s ease-in-out forwards;
+    overflow: hidden;
+    position: fixed;
+
+    .nav-logo{
+        div{ 
+            font-size: 22px;
+            letter-spacing: -2px;
+        }
+    }
+
+    .menu-bar{
+        height: auto;
+        position: relative;
+        width: auto;
+        background-color: black;
+        padding-top: 4px;
+
+        div{ 
+            a{ 
+                font-size: 18px;
+                font-family: Archivo-Narrow, sans-serif;
+                color: white;
+
+                &::after{
+                    content: '';
+                    width: 0%;
+                    height: 2px;
+                    background-color: white;
+                    left: 0;
+                    position: absolute;
+                    bottom: 0;
+    
+                }
+            }
+        }
+    }
+}
+
+//Animations
+
+.linkSlideOpen::after{
+    animation: slideRight 0.3s ease-in-out forwards;
+}
+
+.linkSlideClose::after{
+    animation: slideLeft 0.3s ease-in-out forwards;
+}
+
+@keyframes slideRight {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes slideLeft {
+    from { width: 100%; }
+    to { width: 0; }
+}
+
+.burgerOpen{
+    animation: burgerRotationOpen 0.3s ease-in-out forwards;
+}
+
+.burgerClose{
+    animation: burgerRotationClose 0.3s ease-in-out forwards;
+}
+
+@keyframes burgerRotationOpen {
+    from { transform: rotate(0); }
+    to { transform: rotate(90deg); }
+}
+
+@keyframes burgerRotationClose {
+    from { transform: rotate(90deg); }
+    to { transform: rotate(0); }
+}
+
+.menuBarOpen{
+    animation: menuBarOpenAnim 0.7s ease-in-out forwards;
+}
+
+.menuBarClose{
+    animation: menuBarCloseAnim 0.7s ease-in-out forwards;
+}
+
+@keyframes menuBarOpenAnim {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes menuBarCloseAnim {
+    from { width: 100%; }
+    to { width: 0; }
+}
+
+.menuListOpen{
+    animation: menuListOpenAnim 1s ease-in-out forwards;
+}
+
+.menuListClose{
+    animation: menuListCloseAnim 0.3s ease-in-out forwards;
+}
+
+@keyframes menuListOpenAnim {
+    from { opacity: 0; }
+    to { opacity: 100%; }
+}
+
+@keyframes menuListCloseAnim {
+    from { opacity: 100%; }
+    to { opacity: 0; }
+}
+
+@keyframes headerOpen {
+    from { height: 0; }
+    to { height: 65px; }
+}

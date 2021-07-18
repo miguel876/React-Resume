@@ -15,10 +15,38 @@
   src: url("./resources/fonts/MavenPro-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Merriweather";
+  src: url("./resources/fonts/Merriweather-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Archivo-Black";
+  src: url("./resources/fonts/ArchivoBlack-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Archivo-Narrow";
+  src: url("./resources/fonts/ArchivoNarrow-Regular.ttf");
+}
+
 body, html, #root {
   margin: $no-margin;
-  padding: $no-padding;
-  font-family: MavenPro, sans-serif;
+  padding: $no-padding; 
+  scroll-behavior: smooth;
+}
+
+p{ 
+  margin: $no-margin !important;
+  padding: $no-padding !important;
+  font-family: Merriweather, sans-serif;
+  font-size: 17.5px;
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+}
+
+div{ 
+  font-family: Archivo-Narrow, sans-serif;
 }
 
 body{
@@ -30,4 +58,28 @@ body{
 
 }
 
+b{ 
+  font-weight: bold !important;
+}
+
+ul { 
+  margin-top: 10px !important;
+}
+
+li {
+  font-family: Merriweather, sans-serif;
+  line-height: 2;
+  font-size: 17.5px;
+  letter-spacing: 0.4px;
+  list-style-type: square;
+}
+
+mark{ 
+  background-color:#fff3b6 !important;
+}
+
+
+.gray{
+  color: $gray;
+}
 

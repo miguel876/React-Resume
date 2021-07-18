@@ -12,9 +12,8 @@ export default class Banner extends Component {
         <div className="banner-img" ></div>
         <div className="banner-container">
           <div className="banner-text-container">
-            <div className="banner-text-container-h1">Welcome</div>
-            <div className="banner-text-container-h2">to my Online Resume</div>
-            <div className="banner-text-container-h3">Miguel Santos</div>
+            <div className="banner-text-container-h1 text-left">Welcome</div>
+            <div className="banner-text-container-h2 text-left pl-3">to my Online Resume</div>
           </div>
           <div className="banner-bottom">
             <div className="arrow-down-container">

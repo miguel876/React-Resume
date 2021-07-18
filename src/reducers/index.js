@@ -1,9 +1,8 @@
-import loadedState from '../reducers/loadingState'
+import headerState from './header-state'
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
-    products: productList,
-    
+    headerState,
 })
 
 export default rootReducer;
