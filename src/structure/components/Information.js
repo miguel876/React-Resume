@@ -4,7 +4,7 @@ import '../../styles/Information.scss';
 export default class Information extends Component {
     render() {
         return (
-            <div id="skills" className="mt-5 pt-5 pb-5">
+            <div id="languages" className="mt-5 pt-5 pb-5">
                 <div className="container">
                     <div className="row">
                         <div className="col">

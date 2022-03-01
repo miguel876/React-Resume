@@ -1,0 +1,24 @@
+$black: #000;
+$width: 20px;
+$height: 20px;
+$display: inline-block;
+$margin: 0 2px;
+$verticalAlign: sub;
+
+.checked {
+  background-color: $black;
+  height: $height;
+  width: $width;
+  display: $display;
+  margin: $margin;
+  vertical-align: $verticalAlign;
+}
+
+.unchecked {
+  border: 1px solid $black;
+  height: $height;
+  width: $width;
+  display: $display;
+  margin: $margin;
+  vertical-align: $verticalAlign;
+}

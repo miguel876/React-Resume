@@ -16,7 +16,6 @@ export default class HeaderUp extends Component {
       }
       
       componentDidMount(){
-        console.log("ASDASDASDASEDAS")
         this.setState({ 
           burger: document.getElementsByClassName("burger")[0],
           burgerMenu: document.getElementsByClassName("menu-bar")[0],
@@ -141,7 +140,7 @@ export default class HeaderUp extends Component {
             <div className="menu-list">
               <div><a href="#introduction" onClick={this.menuLinkClick} onMouseEnter={(evt) => this.menuLinkAnimationEnter(evt)} onMouseLeave={(evt) => this.menuLinkAnimationLeave(evt)}>Introduction</a></div>
               <div><a href="#projects" onClick={this.menuLinkClick} onMouseEnter={(evt) => this.menuLinkAnimationEnter(evt)} onMouseLeave={(evt) => this.menuLinkAnimationLeave(evt)}>Projects</a></div>
-              <div><a href="#skills" onClick={this.menuLinkClick} onMouseEnter={(evt) => this.menuLinkAnimationEnter(evt)} onMouseLeave={(evt) => this.menuLinkAnimationLeave(evt)}>Skills</a></div>
+              <div><a href="#skills" onClick={this.menuLinkClick} onMouseEnter={(evt) => this.menuLinkAnimationEnter(evt)} onMouseLeave={(evt) => this.menuLinkAnimationLeave(evt)}>Technologies</a></div>
               <div><a href="#contacts" onClick={this.menuLinkClick} onMouseEnter={(evt) => this.menuLinkAnimationEnter(evt)} onMouseLeave={(evt) => this.menuLinkAnimationLeave(evt)}>Contacts</a></div>
             </div>
           </div>

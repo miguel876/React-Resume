@@ -1,4 +1,4 @@
-@import 'styles/base';
+@import "styles/base";
 
 @font-face {
   font-family: "CustomFont";
@@ -30,13 +30,15 @@
   src: url("./resources/fonts/ArchivoNarrow-Regular.ttf");
 }
 
-body, html, #root {
+body,
+html,
+#root {
   margin: $no-margin;
-  padding: $no-padding; 
+  padding: $no-padding;
   scroll-behavior: smooth;
 }
 
-p{ 
+p {
   margin: $no-margin !important;
   padding: $no-padding !important;
   font-family: Merriweather, sans-serif;
@@ -45,24 +47,23 @@ p{
   letter-spacing: 0.4px;
 }
 
-div{ 
+div {
   font-family: Archivo-Narrow, sans-serif;
 }
 
-body{
+body {
   /*overflow: hidden;*/
-  background-image: url('./resources/images/pc-1.jpg');
+  background-image: url("./resources/images/pc-1.jpg");
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
-
 }
 
-b{ 
+b {
   font-weight: bold !important;
 }
 
-ul { 
+ul {
   margin-top: 10px !important;
 }
 
@@ -74,12 +75,14 @@ li {
   list-style-type: square;
 }
 
-mark{ 
-  background-color:#fff3b6 !important;
+mark {
+  background-color: #fff3b6 !important;
 }
 
+.f-12 {
+  font-size: 12px;
+}
 
-.gray{
+.gray {
   color: $gray;
 }
-

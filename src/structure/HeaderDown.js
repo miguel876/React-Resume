@@ -35,8 +35,8 @@ export default class HeaderDown extends Component {
                 <div className="menu-bar d-flex float-right">
                 <div><a href="#introduction" onMouseEnter={(evt) => this.menuLinkAnimationEnter(evt)} onMouseLeave={(evt) => this.menuLinkAnimationLeave(evt)}>Introduction</a></div>
                   <div><a href="#projects" onMouseEnter={(evt) => this.menuLinkAnimationEnter(evt)} onMouseLeave={(evt) => this.menuLinkAnimationLeave(evt)}>Projects</a></div>
-                  <div><a href="#skills" onMouseEnter={(evt) => this.menuLinkAnimationEnter(evt)} onMouseLeave={(evt) => this.menuLinkAnimationLeave(evt)}>Skills</a></div>
-                  <div><a href="#contacts" onMouseEnter={(evt) => this.menuLinkAnimationEnter(evt)} onMouseLeave={(evt) => this.menuLinkAnimationLeave(evt)}>Contacts</a></div>
+                  <div><a href="#skills" onMouseEnter={(evt) => this.menuLinkAnimationEnter(evt)} onMouseLeave={(evt) => this.menuLinkAnimationLeave(evt)}>Technologies</a></div>
+                  <div><a href="#languages" onMouseEnter={(evt) => this.menuLinkAnimationEnter(evt)} onMouseLeave={(evt) => this.menuLinkAnimationLeave(evt)}>Languages</a></div>
                 </div>
             </div>
             </div>

@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import BannerImg from '../../resources/images/pc-1.jpg';
 import '../../styles/Banner.scss';
 
 export default class Banner extends Component {
-
   render() {
-    const { t } = this.props;
-
     return (
       <div className="banner">
         <div className="banner-img" ></div>
