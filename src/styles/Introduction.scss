@@ -1,20 +1,26 @@
-@import 'base';
+@import "base";
 
-.introduction{
-    height: $full-height;
-    width: $full-width;
-    display: flex;
-    font-weight: 100;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.introduction {
+  height: $full-height;
+  width: $full-width;
+  display: flex;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    .intro-title{
-        font-size: $f-28;
-    }
+  .intro-title {
+    font-size: $f-28;
+  }
 
-    .logo{
-        height: 20px;
-    }
+  .logo {
+    height: 20px;
+  }
 }
 
+@media (max-width: 768px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .introduction {
+    height: 100%;
+  }
+}

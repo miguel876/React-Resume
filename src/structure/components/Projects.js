@@ -9,7 +9,7 @@ export default class Projects extends Component {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h1 className="text-center pt-5 pb-5 mt-5">Projects</h1>
+              <h1 className="text-center pt-5 pb-1 pb-sm-5 mt-5">Projects</h1>
             </div>
           </div>
           <div className="row pb-5">

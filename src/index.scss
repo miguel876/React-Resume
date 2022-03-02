@@ -86,3 +86,15 @@ mark {
 .gray {
   color: $gray;
 }
+
+.mt-300 {
+  margin-top: 300px;
+}
+
+@media (max-width: 768px) {
+  /* smartphones, Android phones, landscape iPhone */
+  p,
+  li {
+    font-size: 14px;
+  }
+}

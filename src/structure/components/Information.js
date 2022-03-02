@@ -5,7 +5,7 @@ export default class Information extends Component {
     render() {
         return (
             <div id="languages" className="mt-5 pt-5 pb-5">
-                <div className="container">
+                <div className="container w-75 w-sm-100">
                     <div className="row">
                         <div className="col">
                             <h1 className="text-center mb-5">Languages</h1>
