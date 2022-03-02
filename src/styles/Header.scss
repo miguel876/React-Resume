@@ -1,232 +1,331 @@
-@import 'base';
+@import "base";
 
-nav{ 
-    color: white;
-    width: $full-width;
-    position: absolute;
-    z-index: 11;
+nav {
+  color: white;
+  width: $full-width;
+  position: absolute;
+  z-index: 11;
 
-    .nav-logo{
-
-        div { 
-            font-size: 75px;
-            text-align: left;
-            letter-spacing: -4px;
-            text-transform: uppercase;
-        }
+  .nav-logo {
+    div {
+      font-size: 75px;
+      text-align: left;
+      letter-spacing: -4px;
+      text-transform: uppercase;
     }
+  }
 
-    .menu-bar div:last-child {
-        margin-right: 0;
-    }
-    
-    .menu-bar div {
-        margin: 0 15px;
+  .menu-bar div:last-child {
+    margin-right: 0;
+  }
 
-        a { 
-            color: #000;
-            font-family: Archivo-Black, sans-serif;
-            font-size: 50px;
-            position: relative;
-            transition: 0.4s;
+  .menu-bar div {
+    margin: 0 15px;
 
-            &::after{
-                content: '';
-                width: 0%;
-                height: 10px;
-                background-color: black;
-                left: 0;
-                position: absolute;
-                bottom: 0;
+    a {
+      color: #000;
+      font-family: Archivo-Black, sans-serif;
+      font-size: 50px;
+      position: relative;
+      transition: 0.4s;
+      -webkit-text-stroke: 0.2px white;
 
-            }
-
-            &:hover{
-                text-decoration: none;
-            }
-        }
-    }
-
-
-    .burger{
-        margin-top: 25px;
-        cursor: pointer;
-
-        .burger-line{
-            background-color: white;
-            height: 4px;
-            width: 87px;
-            box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
-
-            &:nth-child(1), &:nth-child(2) {
-                margin-bottom: 20px;
-            }
-        }
-    }
-
-    .menu-bar{
-        background-color: white;
+      &::after {
+        content: "";
+        width: 0%;
+        height: 10px;
+        background-color: black;
+        left: 0;
         position: absolute;
-        top: 0;
-        width: 100%;
-        height: $full-height;
+        bottom: 0;
+        z-index: -1;
+      }
 
-        .close-menu{
-            padding-right: 100px;
-            padding-top: 20px;
-            cursor: pointer;
-            position: relative;
-            right: -25px;
-            height: 100px;
-        
-            .close-bar {
-                background-color: black;
-                height: 100px;
-                width: 4px;
-                padding: 0;
-                margin: 0;
-                position: absolute;
-                left: 50%;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 
-                &:nth-child(1){
-                    transform: rotate(45deg);
-                }
+  .burger {
+    margin-top: 25px;
+    cursor: pointer;
 
-                &:nth-child(2){
-                    transform: rotate(135deg);
-                }
-            }
+    .burger-line {
+      background-color: white;
+      height: 4px;
+      width: 87px;
+      box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .menu-bar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: $full-height;
+
+    .close-menu {
+      padding-right: 100px;
+      padding-top: 20px;
+      cursor: pointer;
+      position: relative;
+      right: -25px;
+      height: 100px;
+
+      .close-bar {
+        background-color: black;
+        height: 100px;
+        width: 4px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+
+        &:nth-child(1) {
+          transform: rotate(45deg);
         }
 
-        .menu-list{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
+        &:nth-child(2) {
+          transform: rotate(135deg);
         }
-    }    
+      }
+    }
 
-    
-
+    .menu-list {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
 
-nav.header-down{
+nav.header-down {
+  background-color: black;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+  height: 65px;
+  animation: headerOpen 0.5s ease-in-out forwards;
+  overflow: hidden;
+  position: fixed;
+
+  .nav-logo {
+    div {
+      font-size: 22px;
+      letter-spacing: -2px;
+    }
+  }
+
+  .menu-bar {
+    height: auto;
+    position: relative;
+    width: auto;
     background-color: black;
-    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.5);
-    height: 65px;
-    animation: headerOpen 0.5s ease-in-out forwards;
-    overflow: hidden;
-    position: fixed;
+    padding-top: 4px;
 
-    .nav-logo{
-        div{ 
-            font-size: 22px;
-            letter-spacing: -2px;
+    div {
+      a {
+        font-size: 18px;
+        font-family: Archivo-Narrow, sans-serif;
+        color: white;
+
+        &::after {
+          content: "";
+          width: 0%;
+          height: 2px;
+          background-color: white;
+          left: 0;
+          position: absolute;
+          bottom: 0;
         }
+      }
     }
-
-    .menu-bar{
-        height: auto;
-        position: relative;
-        width: auto;
-        background-color: black;
-        padding-top: 4px;
-
-        div{ 
-            a{ 
-                font-size: 18px;
-                font-family: Archivo-Narrow, sans-serif;
-                color: white;
-
-                &::after{
-                    content: '';
-                    width: 0%;
-                    height: 2px;
-                    background-color: white;
-                    left: 0;
-                    position: absolute;
-                    bottom: 0;
-    
-                }
-            }
-        }
-    }
+  }
 }
 
 //Animations
 
-.linkSlideOpen::after{
-    animation: slideRight 0.3s ease-in-out forwards;
+.linkSlideOpen::after {
+  animation: slideRight 0.3s ease-in-out forwards;
 }
 
-.linkSlideClose::after{
-    animation: slideLeft 0.3s ease-in-out forwards;
+.linkSlideClose::after {
+  animation: slideLeft 0.3s ease-in-out forwards;
 }
 
 @keyframes slideRight {
-    from { width: 0; }
-    to { width: 100%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes slideLeft {
-    from { width: 100%; }
-    to { width: 0; }
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
 
-.burgerOpen{
-    animation: burgerRotationOpen 0.3s ease-in-out forwards;
+.burgerOpen {
+  animation: burgerRotationOpen 0.3s ease-in-out forwards;
 }
 
-.burgerClose{
-    animation: burgerRotationClose 0.3s ease-in-out forwards;
+.burgerClose {
+  animation: burgerRotationClose 0.3s ease-in-out forwards;
 }
 
 @keyframes burgerRotationOpen {
-    from { transform: rotate(0); }
-    to { transform: rotate(90deg); }
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(90deg);
+  }
 }
 
 @keyframes burgerRotationClose {
-    from { transform: rotate(90deg); }
-    to { transform: rotate(0); }
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0);
+  }
 }
 
-.menuBarOpen{
-    animation: menuBarOpenAnim 0.7s ease-in-out forwards;
+.menuBarOpen {
+  animation: menuBarOpenAnim 0.7s ease-in-out forwards;
 }
 
-.menuBarClose{
-    animation: menuBarCloseAnim 0.7s ease-in-out forwards;
+.menuBarClose {
+  animation: menuBarCloseAnim 0.7s ease-in-out forwards;
 }
 
 @keyframes menuBarOpenAnim {
-    from { width: 0; }
-    to { width: 100%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes menuBarCloseAnim {
-    from { width: 100%; }
-    to { width: 0; }
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
 
-.menuListOpen{
-    animation: menuListOpenAnim 1s ease-in-out forwards;
+.menuListOpen {
+  animation: menuListOpenAnim 1s ease-in-out forwards;
 }
 
-.menuListClose{
-    animation: menuListCloseAnim 0.3s ease-in-out forwards;
+.menuListClose {
+  animation: menuListCloseAnim 0.3s ease-in-out forwards;
 }
 
 @keyframes menuListOpenAnim {
-    from { opacity: 0; }
-    to { opacity: 100%; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 @keyframes menuListCloseAnim {
-    from { opacity: 100%; }
-    to { opacity: 0; }
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes headerOpen {
-    from { height: 0; }
-    to { height: 65px; }
+  from {
+    height: 0;
+  }
+  to {
+    height: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* smartphones, Android phones, landscape iPhone */
+  nav {
+    .nav-logo div {
+      font-size: 40px;
+    }
+
+    .burger {
+      margin-top: 10px;
+
+      .burger-line {
+        width: 60px;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .menu-bar {
+      div a {
+        font-size: 24px;
+      }
+
+      .close-menu .close-bar {
+        height: 65px;
+      }
+    }
+  }
+
+  nav.header-down {
+    overflow: unset;
+
+    .nav-logo {
+      margin-top: 5px;
+    }
+
+    .burger {
+      margin-top: 5px;
+
+      .burger-line {
+        width: 40px;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .menu-bar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+
+      div a {
+        color: #000;
+        font-family: Archivo-Black, sans-serif;
+        font-size: 24px;
+      }
+    }
+  }
 }

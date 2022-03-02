@@ -5,6 +5,7 @@ import Projects from '../structure/components/Projects.js';
 import Information from '../structure/components/Information';
 import '../styles/Layout.scss';
 import store from '../store'
+import Technologies from './components/Technologies.js';
 
 export default class Layout extends Component {
     constructor(props) {
@@ -30,6 +31,7 @@ export default class Layout extends Component {
         <Banner />
         <Introduction />
         <Projects />
+        <Technologies />
         <Information />
       </div>
     );

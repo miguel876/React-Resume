@@ -8,7 +8,25 @@ export default class Header extends Component {
     super(props)
     
     this.state = {
-      headerScroll: false
+      headerScroll: false,
+      headerMenus: [
+        {
+          link: "#introduction",
+          label: "Introduction",
+        },
+        {
+          link: "#projects",
+          label: "Projects",
+        },
+        {
+          link: "#skills",
+          label: "Technologies",
+        },
+        {
+          link: "#contacts",
+          label: "Contacts",
+        },
+      ]
     }
   }
 
@@ -35,9 +53,9 @@ export default class Header extends Component {
       <header>
         {
           this.state.headerScroll ?
-            <HeaderDown />
+            <HeaderDown menus={this.state.headerMenus} />
           :
-            <HeaderUp />
+            <HeaderUp menus={this.state.headerMenus} />
         }
         
       </header>

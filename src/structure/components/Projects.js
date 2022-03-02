@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
 import '../../styles/Projects.scss';
-import ProgressBar from './ProgressBar';
 import _ from "lodash";
 
 export default class Projects extends Component {
-
-  componentDidMount() {
-    
-  }
-
   render() {
     return (
       <div id="projects" className="projects">
         <div className="container">
           <div className="row">
             <div className="col">
-              <h1 className="text-center pt-5 pb-5 mt-5">Projects</h1>
+              <h1 className="text-center pt-5 pb-1 pb-sm-5 mt-5">Projects</h1>
             </div>
           </div>
           <div className="row pb-5">
@@ -31,58 +25,39 @@ export default class Projects extends Component {
             </div>
             <div className="col-9">
             <div className="project-container">
-              <div className="project">
+            <div className="project">
+              <div className="project-description pt-5">
+                <p>Development of a <mark>Banking</mark> platform (React):
+                Development of the front-end using React. The project consists in creating a banking platform solution using React (Functional) with the help of Material UI. The tasks are defined in JIRA and the documentation in Confluence. The project uses GIT for version controlling and collaboration, using the Gitflow methodology. 
+                The front-end and back-end communications are made with RESTfull webservices. In the front-end the data is retrieved accessing the API endpoints in JSON. 
+                The APIs are tested using Swagger. The application server is deployed in NGINX.
+                </p>
+                <p>Tecnologies used:</p>
+                <ul>
+                  <li>React</li>
+                  <li>Material UI</li>
+                  <li>JIRA and Confluence</li>
+                  <li>GIT</li>
+                  <li>REST</li>
+                  <li>Swagger</li>
+                  <li>API Endpoints</li>
+                </ul>
+                </div>
+              </div>
+
+              <div className="project pt-5">
                 <div className="project-img"></div>
-                <div className="project-description">
+                <div className="project-description pt-5">
                 <p>Development of <mark>Banks Institutional Websites</mark> using a CMS. The project consists in creating the website according to the design team drawing. Development of an exchange widget component hosted by an HTTP Application Server.</p>
                 <p>Tecnologies used:</p>
                 <ul>
                   <li>dotCMS</li>
-                  <li>Javascript</li>
                   <li>JQuery</li>
                   <li>HTML, CSS and Bootstrap</li>
                 </ul>
                 </div>
 
               </div>
-
-              <div className="project pt-5">
-              <div className="project-description pt-5">
-                <p>
-                  Development of a <mark>Banking</mark> platform (Angular JS):
-                  Development of the front-end using Angular JS. The project consists in creating the pages of the solution using Angular, CSS and HTML. The tasks are defined in JIRA and the documentation in Confluence. The project uses GIT for version controlling and collaboration, using the Gitflow methodology. The front-end and back-end communications are possible using RESTfull webservices.  
-                  </p>
-                <p>Tecnologies used:</p>
-                <ul>
-                  <li>Angular JS</li>
-                  <li>HTML, CSS and Bootstrap</li>
-                  <li>JIRA and Confluence</li>
-                  <li>GIT</li>
-                  <li>REST</li>
-                  <li>Swagger</li>
-                  <li>API Endpoints</li>
-                </ul>
-                </div>
-              </div>
-
-              <div className="project pt-5">
-              <div className="project-description pt-5">
-                <p>Development of a <mark>Banking</mark> platform (React):
-                Development of the front-end using React. The project consists in creating the pages of the solutions using React (Functional based), CSS and HTML. The tasks are defined in JIRA and the documentation in Confluence. The project uses GIT for version controlling and collaboration, using the Gitflow methodology. The front-end and back-end communications are made with RESTfull webservices. In the front-end the data is retrieved accessing the API endpoints in JSON. The APIs are tested using Swagger. The application server is Wildfly.
-                </p>
-                <p>Tecnologies used:</p>
-                <ul>
-                  <li>React</li>
-                  <li>HTML, CSS and Bootstrap</li>
-                  <li>JIRA and Confluence</li>
-                  <li>GIT</li>
-                  <li>REST</li>
-                  <li>Swagger</li>
-                  <li>API Endpoints</li>
-                </ul>
-                </div>
-              </div>
-
 
             </div>
 
