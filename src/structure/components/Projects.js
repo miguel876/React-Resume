@@ -5,7 +5,7 @@ import _ from "lodash";
 export default class Projects extends Component {
   render() {
     return (
-      <div id="projects" className="projects">
+      <div id="projects" className="projects bg-white">
         <div className="container">
           <div className="row">
             <div className="col">
@@ -13,7 +13,7 @@ export default class Projects extends Component {
             </div>
           </div>
           <div className="row pb-5">
-            <div className="col-3 relative">
+            <div className="col-12 col-sm-3 relative pt-5 pb-3 mt-sm-0 sticky-m">
               <div className="company-data">
                 <div className="company-date">
                   <div className="company-start-date">09/2018</div>
@@ -23,7 +23,7 @@ export default class Projects extends Component {
                 <div className="company-name">Asseco PST</div>
               </div>
             </div>
-            <div className="col-9">
+            <div className="col-sm-9 col-12 text-justify text-sm-left">
             <div className="project-container">
             <div className="project">
               <div className="project-description pt-5">
@@ -65,7 +65,7 @@ export default class Projects extends Component {
           </div>
 
           <div className="row mt-5 pb-5">
-            <div className="col-3 relative">
+            <div className="col-12 col-sm-3 relative pt-5 pb-3 mb-5 mb-sm-0 mt-sm-0 sticky-m">
               <div className="company-data">
                 <div className="company-date">
                   <div className="company-start-date">03/2018</div>
@@ -76,7 +76,7 @@ export default class Projects extends Component {
               </div>
               
             </div>
-            <div className="col-9">
+            <div className="col-sm-9 col-12 text-justify text-sm-left">
             <div className="project-container">
               <div className="project">
               <div className="project-description">
@@ -140,13 +140,13 @@ export default class Projects extends Component {
           </div>
 
           <div className="row mt-5 pb-5">
-            <div className="col-3 relative">
+            <div className="col-12 col-sm-3 relative pt-5 pb-3 mb-5 mb-sm-0 mt-sm-0 sticky-m">
               <div className="company-data">
                 <div className="company-name">Education and Courses</div>
               </div>
               
             </div>
-            <div className="col-9">
+            <div className="col-sm-9 col-12 text-justify text-sm-left">
             <div className="project-container">
               <div className="project">
               <div className="project-description">

@@ -22,10 +22,6 @@ export default class Header extends Component {
           link: "#skills",
           label: "Technologies",
         },
-        {
-          link: "#contacts",
-          label: "Contacts",
-        },
       ]
     }
   }

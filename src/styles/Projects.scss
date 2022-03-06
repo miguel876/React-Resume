@@ -1,97 +1,109 @@
-@import 'base';
+@import "base";
 
-.projects{
-    width: 100%;
+.projects {
+  width: 100%;
+  position: relative;
+
+  .row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:nth-child(1) {
+      border-bottom: none;
+    }
+  }
+
+  .relative {
     position: relative;
-    margin-top: 300px;
+  }
 
-    .row{
-        border-bottom: 1px solid rgba(0,0,0,0.1); 
+  .company-data {
+    position: sticky;
+    top: 90px;
 
-        &:nth-child(1){
-            border-bottom: none;
-        }
+    .company-name {
+      font-size: 18px;
     }
 
-    
+    .company-date {
+      font-size: 14px;
+      display: flex;
 
-    .relative{
-        position: relative;
+      > span {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  .project {
+    .project-description {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
 
-    .company-data {
-        position: sticky;
-        top: 90px;
-
-        .company-name{
-            font-size: 18px;
-        }
-    
-        .company-date{
-            font-size: 14px;
-            display: flex;
-
-            > span{
-                margin: 0 5px;
-            }
-        }
+    &:nth-child(1) .project-description {
+      border-top: none;
     }
-    
-
-    .project{
-        
-        .project-description{
-            border-top: 1px solid rgba(0,0,0,0.1); 
-        }
-
-        &:nth-child(1) .project-description{
-            border-top: none;
-        }
-
-        
-    }
+  }
 }
 
-.hide-left{
-    left: -100%;
-    opacity: 0;
+.hide-left {
+  left: -100%;
+  opacity: 0;
 }
-.hide-right{
-    right: -100%;
-    opacity: 0;
+.hide-right {
+  right: -100%;
+  opacity: 0;
 }
 
-.show-left{
-    animation: resetLeft 1s ease;
+.show-left {
+  animation: resetLeft 1s ease;
 }
-.show-right{
-    animation: resetRight 1s ease;
+.show-right {
+  animation: resetRight 1s ease;
 }
 
 @keyframes resetLeft {
-    0% { left: -100%; opacity: 0;}
-    100% { left: 0%; opacity: 1;}
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
 }
 
 @keyframes resetRight {
-    0% { right: -100%; opacity: 0;}
-    100% { right: 0%; opacity: 1;}
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0%;
+    opacity: 1;
+  }
 }
 
-@media (max-width:768px)  { 
-    .projects .company-data {
-        text-align: center;
+@media (max-width: 768px) {
+  .projects .company-data {
+    text-align: center;
 
-        .company-date{
-            display: block;
+    .company-date {
+      justify-content: center;
 
-            > span{
-                display: none;
-            }
-        }
-
-        .company-name{
-            font-size: 16px;
-        }
+      > span {
+        display: none;
+      }
     }
+
+    .company-name {
+      font-size: 16px;
+    }
+  }
+
+  .projects .sticky-m {
+    position: sticky;
+    top: 40px;
+    background-color: white;
+    z-index: 1;
+  }
 }

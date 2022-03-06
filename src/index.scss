@@ -52,11 +52,11 @@ div {
 }
 
 body {
-  /*overflow: hidden;*/
-  background-image: url("./resources/images/pc-1.jpg");
-  background-size: cover;
-  background-attachment: fixed;
   overflow-x: hidden;
+  // background-image: url("./resources/images/pc-1.jpg");
+  // background-size: cover;
+  // background-attachment: fixed;
+  // overflow-x: hidden;
 }
 
 b {
@@ -77,6 +77,10 @@ li {
 
 mark {
   background-color: #fff3b6 !important;
+}
+
+.bg-white {
+  background-color: #ffffff;
 }
 
 .f-12 {
