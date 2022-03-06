@@ -4,7 +4,7 @@ import TechnologiesScore from './TechnologiesScore';
 export default class Technologies extends Component {
   render() {
     return (
-        <div id="skills" className="mt-300 pb-5">
+        <div id="skills" className="mt-300 pb-5 bg-white">
         <div className="container w-75 w-sm-50">
             <div className="row">
                 <div className="col">

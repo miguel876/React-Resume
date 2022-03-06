@@ -5,7 +5,7 @@ import LinkedInLogo from '../../resources/images/linkedin-brands.svg'
 export default class Introduction extends Component {
   render() {
     return (
-      <div id="introduction" className="introduction pb-5 pb-sm-0">
+      <div id="introduction" className="introduction pb-5 pb-sm-0 bg-white">
         <div className="container">
           <div className="row text-left">
             <div className="col-12 col-sm-8 pr-sm-5">
