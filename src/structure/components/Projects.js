@@ -16,9 +16,61 @@ export default class Projects extends Component {
             <div className="col-12 col-sm-3 relative pt-5 pb-3 mt-sm-0 sticky-m">
               <div className="company-data">
                 <div className="company-date">
+                  <div className="company-start-date">07/2023</div>
+                  <span> - </span>
+                  <div className="company-end-date">01/2024</div>
+                 </div>
+                <div className="company-name">Bliss Applications</div>
+              </div>
+            </div>
+            <div className="col-sm-9 col-12 text-justify text-sm-left">
+            <div className="project-container">
+            <div className="project">
+              <div className="project-description pt-5">
+                <p>Development of <mark>Cartier</mark> website:
+                Development of new features and bug fixing. The development was made with React, Typescript and Styled Components by following a Zeplin design with pixel perfect. 
+                The methodology used was SCRUM with daily meetings and 2 week Sprints. For unit testing Jest was used with React testing library.
+                </p>
+                <p>Tecnologies used:</p>
+                <ul>
+                  <li>React</li>
+                  <li>Typescript</li>
+                  <li>Styled Components</li>
+                  <li>Storybook</li>
+                  <li>Jest and RTL</li>
+                  <li>JIRA and Confluence</li>
+                  <li>GIT</li>
+                  <li>CI/CD</li>
+                  <li>REST API</li>
+                </ul>
+                </div>
+              </div>
+
+              <div className="project pt-5">
+                <div className="project-img"></div>
+                <div className="project-description pt-5">
+                <p>Development of <mark>Banks Institutional Websites</mark> using a CMS. The project consists in creating the website according to the design team drawing. Development of an exchange widget component hosted by an HTTP Application Server.</p>
+                <p>Tecnologies used:</p>
+                <ul>
+                  <li>dotCMS</li>
+                  <li>JQuery</li>
+                  <li>HTML, CSS and Bootstrap</li>
+                </ul>
+                </div>
+
+              </div>
+
+            </div>
+
+            </div>
+          </div>
+          <div className="row pb-5">
+            <div className="col-12 col-sm-3 relative pt-5 pb-3 mt-sm-0 sticky-m">
+              <div className="company-data">
+                <div className="company-date">
                   <div className="company-start-date">09/2018</div>
                   <span> - </span>
-                  <div className="company-end-date">*</div>
+                  <div className="company-end-date">07/2023</div>
                  </div>
                 <div className="company-name">Asseco PST</div>
               </div>
