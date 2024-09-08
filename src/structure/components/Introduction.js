@@ -4,6 +4,17 @@ import LinkedInLogo from '../../resources/images/linkedin-brands.svg'
 
 export default class Introduction extends Component {
   render() {
+    function getAge(dateString) {
+      var today = new Date();
+      var birthDate = new Date(dateString);
+      var age = today.getFullYear() - birthDate.getFullYear();
+      var m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      return age;
+    }
+
     return (
       <div id="introduction" className="introduction pb-5 pb-sm-0 bg-white">
         <div className="container">
@@ -11,15 +22,15 @@ export default class Introduction extends Component {
             <div className="col-12 col-sm-8 pr-sm-5">
               <div className="intro-title pb-3 pt-5 pt-sm-0">About myself</div>
               <p className="text-justify">
-                My name is Miguel Santos and I'm a Web developer. I started developing around 2017 in my programming course. 
-                I like to develop with React but I had the chance to work with other tecnologies throughout my career. 
+                My name is Miguel Santos and I'm a Web developer. I started developing around 2017 in my programming course.
+                I like to develop with React but I had the chance to work with other tecnologies throughout my career.
                 You can see more about my projects swipping down.
               </p>
             </div>
             <div className="col-12 col-sm-4 pt-5 pt-sm-0 pl-sm-5">
               <div className="intro-title pb-3">Details</div>
               <div><b>Age</b></div>
-              <div className="gray pb-2">24 years old</div>
+              <div className="gray pb-2">{getAge("1996-11-15")}</div>
               <div className="pt-2"><b>Location</b></div>
               <div className="gray">Portugal, Setúbal, Moita</div>
 
@@ -33,7 +44,7 @@ export default class Introduction extends Component {
           </div>
 
         </div>
-        
+
       </div>
     );
   }
