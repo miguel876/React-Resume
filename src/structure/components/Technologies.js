@@ -12,14 +12,14 @@ export default class Technologies extends Component {
                     <div className='row'>
                         <div className="col-12 col-sm-6 text-center">
                             <TechnologiesScore score={5} label="React"/>
+                            <TechnologiesScore score={4} label="Redux" />
+                            <TechnologiesScore score={4} label="MUI" />
+                            <TechnologiesScore score={3} label="SASS" />
+                            <TechnologiesScore score={3} label="Styled Components" />
+                            <TechnologiesScore score={3} label="TypeScript" />
                             <TechnologiesScore score={4} label="Javascript" />
                             <TechnologiesScore score={4} label="JQuery" />
                             <TechnologiesScore score={4} label="HTML CSS" />
-                            <TechnologiesScore score={3} label="dotCMS" />
-                            <TechnologiesScore score={1} label="PHP" />
-                            <TechnologiesScore score={1} label=".NET" />
-                            <TechnologiesScore score={1} label="SQL" />
-                            <TechnologiesScore score={1} label="Java" />
 
                         </div>
                         <div className="col-12 col-sm-6 text-center">
